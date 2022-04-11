@@ -1,0 +1,29 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* font-family: 'Libre Franklin', sans-serif; */
+
+/* Global Variables */
+:root{
+    --clr-blue:hsl(223, 87%, 63%);
+    --clr-pale-blue:hsl(223, 100%, 88%);
+    --clr-light-blue:hsl(354, 100%, 66%);
+    --clr-gray:hsl(0, 0%, 59%);
+    --clr-very-dark-blue:hsl(209, 33%, 12%);
+    --ff-primary:'Libre Franklin', sans-serif;
+}
+/* GLobal Styles */
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:var(--ff-primary);
+    height:100vh;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}

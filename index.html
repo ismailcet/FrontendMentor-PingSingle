@@ -3,32 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  <main class="section">
+    <section class="section-center">
+      <img src="images/logo.svg" alt="Logo" class="logo">
+      <div class="text">
+        <h1 class="title">We are launching <span class="soon">soon!</span></h1>
+        <p class="info">Subscribe and get notified</p>
+      </div>
+      <form class="form">
+        <input type="email" class="email" placeholder="Your email address...">
+        <a href="#" class="btn btn-nofity">Notify Me</a>
+      </form>
+      <img src="images/illustration-dashboard.png" alt="Dashboard" class="image">
+      <div class="links-icon">
+        <ul class="links">
+          <li class="link">
+            <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li class="link">
+            <a href="#" class="icon"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li class="link">
+            <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer">
+        &copy; Copyright Ping. All rights reserved.
+      </p>
+    </section>
+  </main>
 </body>
 </html>
