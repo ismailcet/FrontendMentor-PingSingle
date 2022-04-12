@@ -19,11 +19,156 @@
 }
 body{
     font-family:var(--ff-primary);
-    height:100vh;
 }
 ul{
     list-style-type: none;
 }
 a{
     text-decoration: none;
+}
+img:not(.logo){
+    width:100%;
+}
+/* Main Styles */
+.section-center{
+    padding: 4rem 2rem;
+    display: grid;
+}
+.logo{
+
+    margin: 0 auto 2.5rem;
+}
+.title{
+    text-align: center;
+    font-weight: 300;
+    color: var(--clr-gray);
+    margin-bottom: 1.5rem;
+}
+.soon{
+    color: var(--clr-very-dark-blue);
+    font-weight:700 ;
+}
+.info{
+    text-align: center;
+    color: var(--clr-very-dark-blue);
+    margin-bottom:3rem;
+    font-weight: 300;
+}
+/* Input */
+.form{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 4.5rem;
+}
+.email{
+    min-width: 15rem;
+    height: 3rem;
+    border-radius: 40px;
+    border: 2px solid var(--clr-pale-blue);
+    padding: 0 2rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+}
+.email::placeholder{
+    color: var(--clr-pale-blue);
+}
+.btn-nofity{
+    background-color: var(--clr-blue);
+    text-align: center;
+    padding: 1rem 0;
+    border-radius: 40px;
+    color: white;
+    font-size: .875rem;
+    font-weight: 600;
+    min-width: 15rem;
+    transition: all .5s linear;
+}
+.btn-nofity:hover{
+    background-color: #7195F5;
+}
+.image{
+    display: block;
+    width: 100%;
+    margin-bottom: 9rem;
+}.links-icon{
+    margin-bottom: 2rem;
+}
+.links{
+    display: flex;
+    align-items:center;
+    justify-content:space-evenly;
+}
+.link{
+    transition: all .5s linear;
+}
+.link a{
+    text-align: center;
+    color: var(--clr-blue);
+}
+.link i{
+    font-size: 1.25rem;
+    padding: .7rem .8rem;
+    transition: all .5s linear;
+}
+.link:hover{
+    background-color: var(--clr-blue);
+    
+}
+.link i:hover{
+    color:white;
+}
+.link{
+    border: 1px solid var(--clr-gray);
+    border-radius:50%;
+}
+.footer{
+    color: var(--clr-gray);
+    text-align: center;
+    font-size: .875rem;
+}
+
+/* Responsive Desing */
+/* Tablet */
+@media screen and (max-width:992px) and (min-width:600px) {
+    .title{
+        font-size: 2rem;
+    }
+    .info{
+        font-size: 1.2rem;
+    }
+    .links .link:nth-child(2){
+        margin-left: -5rem;
+        margin-right: -5rem;
+    }
+}
+/* Desktop */
+@media screen and (min-width:992px) {
+    .section-center{
+        padding: 2rem 24.5rem;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .info{
+        font-size: 1.5rem;
+    }
+    .form{
+        display: flex;
+        flex-direction: row;
+    }
+    .email{
+        width: 75%;
+        padding-top: 1.625rem;
+        padding-bottom: 1.625rem;
+    }
+    .btn-nofity{
+        height: 56px;
+        width: 25%;
+        min-width: 200px;
+        min-width:0;
+        margin-left: 2rem;
+    }
+    .image{
+        margin-bottom:4rem;
+    }
 }
